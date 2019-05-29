@@ -1,0 +1,77 @@
+﻿<!-- Modal Thong tin tai khoan -->
+<div class="modal fade" id="modalAccountInfo" tabindex="-1" role="dialog" style="padding-left: 0px;">
+	<div class="modal-dialog" role="document" style="width: 100%; max-width: 600px; margin: 3px auto; margin-top: 3%">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Thông tin tài khoản</h5>
+				<button type="button" id="closeModalAccountInfo" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<table class="table table-bordered mb-0">
+						<tbody>
+							<tr>
+								<td class="field">Tên tài khoản :</td>
+								<td id="accountIDModal"></td>
+							</tr>
+							<tr>
+								<td class="field">Họ tên :</td>
+								<td id="nameAccountModal">ABCD<sup>2</sup></td>
+							</tr>
+							<tr>
+								<td class="field">Ngày sinh :</td>
+								<td id="birthdayAccountModal">22/2/2018</td>
+							</tr>
+							<tr>
+								<td class="field">Giới tính :</td>
+								<td id="sexAccountModal">N/A</td>
+							</tr>
+							<tr>
+								<td class="field">Email :</td>
+								<td id="emailAccountModal">abc@gmail.com</td>
+							</tr>
+							<tr>
+								<td class="field">Số điện thoại :</td>
+								<td id="phoneAccountModal">0123456789</td>
+							</tr>
+							<tr>
+								<td class="field">Thành phố :</td>
+								<td id="cityAccountModal">N/A</td>
+							</tr>
+							<tr>
+								<td class="field">Quận/Huyện/Thị xã :</td>
+								<td id="townshipAccountModal">N/A</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="modal-footer justify-content-between">
+				<button account-id="" type="button" class="btn btn-sm btn-danger" title="Xóa tài khoản này"
+						data-toggle="modal" data-target="#modalSendMessage2"
+						data-dismiss="modal" id="btnDeleteAccount">
+					<span id="xoa1" style="display:block"> Xoá</span>
+					<span id="xoa2" style="display:none">
+						<i class="fa fa-spinner fa-spin"></i> Đang xoá
+					</span>
+				</button>
+				<button type="button" account-id="" id="btnLockAccount" title="Khoá tài khoản này"
+						class="btn btn-sm btn-primary w-25 ml-3" style="display: none;">
+					<span id="block1" style="display:block">Khoá</span>
+					<span id="block2" style="display:none">
+						<i class="fa fa-spinner fa-spin"></i> Đang khoá
+					</span>
+				</button>
+				<button type="button" account-id="" id="btnUnlockAccount" title="Mở khoá tài khoản này"
+						class="btn btn-sm btn-primary w-25 ml-3">
+					<span id="unlock1" style="display:block">Mở khoá</span>
+					<span id="unlock2" style="display:none">
+						<i class="fa fa-spinner fa-spin"></i> Đang mở khoá
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
